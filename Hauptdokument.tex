@@ -1,0 +1,85 @@
+\documentclass[a4paper,12pt,headsepline]{report}
+
+%----------------- PDF CONFIG ----------------- %
+\pdfinfo{    
+     /Title (PDF-Titel) 
+     /Subject   (PDF-Thema)    
+     /Author  (Jan Niklas Hollenbeck) 
+     /Keywords   (Stichwort1,Stichwort2)      
+} 
+
+\title{Graphen Datenbanken}
+\author{Jan Niklas Hollenbeck}
+\date{1.1.2000}
+
+
+
+%----------------- PAKETE INKLUDIEREN ----------------- %
+
+\usepackage{geometry} % Packet für Seitenrandabständex und Einstellung für Seitenränder
+\usepackage[ngerman]{babel} % deutsche Silbentrennung
+
+\usepackage{booktabs} %entzerrt die Tabellenzeilen und bietet verschieden dicke Unterteilungslinien
+\usepackage{longtable} % Tabellen können sich nicht über mehrere Seiten 
+\usepackage{graphicx} % kann LaTeX Grafiken einbinden
+
+\usepackage[ansinew]{inputenc} % Umlaute unter Mac werden automatisch gesetzt
+\usepackage[T1]{fontenc} % Zeichenencoding
+\usepackage{lmodern} % typographische Qualität 
+\frenchspacing % Schaltet den zusätzlichen Zwischenraum ab
+\usepackage{fix-cm}
+\usepackage{hyperref} % verwandelt alle Kapitelüberschriften, Verweise aufs Literaturverzeichnis und andere Querverweise in PDF-Hyperlinks
+\usepackage{color}
+\usepackage{url}
+
+
+\usepackage[nottoc]{tocbibind}
+
+
+% für Listings
+\usepackage{listings}
+\lstset{numbers=left, numberstyle=\tiny, numbersep=5pt, stepnumber=4, keywordstyle=\color{black}\bfseries\itshape, stringstyle=\ttfamily,showstringspaces=false,basicstyle=\footnotesize,captionpos=b}
+\lstset{language=java}
+
+
+
+%----------------- FARBEN DEFINIEREN ----------------- %
+\definecolor{gray}{gray}{0.95} % Listingsbackground
+
+%----------------- LAYOUT SETZEN ----------------- %
+\geometry{left=2cm, right=2cm, top=2.5cm, bottom=2cm}
+\linespread {1.25}\selectfont %1.25 da er von Haus aus 1.2 ist und 1,25 * 1,2 = 1,5 isch
+
+
+
+
+%-------##-------##-------##------- ANFANG INHALT -------##-------##-------##-------%
+\begin{document}
+
+
+
+\pagenumbering{roman} % Seitennummer
+
+%----------------- DECKBLATT -----------------%
+ \include{Deckblatt/h_da_arbeit}
+ 
+%----------------- ABSTRACT -----------------%
+ \include{Abstract/Abstract}
+ 
+ 
+%----------------- VERZEICHNISSE -----------------%
+\tableofcontents % Inhaltverzeichnis
+
+
+
+\pagestyle{plain} % zurueck setzen von roemische seitenanzahl
+
+%\nocite{wiki:xxx}
+\nocite{Robinson2015}
+\bibliographystyle{amsalpha}
+\bibliography{literatur}
+\pagenumbering{Roman}	
+	
+
+	
+\end{document}
