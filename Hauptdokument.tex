@@ -4,11 +4,10 @@
 \pdfinfo{    
      /Title (PDF-Titel) 
      /Subject   (PDF-Thema)    
-     /Author  (Jan Niklas Hollenbeck) 
-     /Keywords   (Stichwort1,Stichwort2)      
+     /Author  (Jan Niklas Hollenbeck)    
 } 
 
-\title{Graphen Datenbanken}
+\title{Graphendatenbanken}
 \author{Jan Niklas Hollenbeck}
 \date{1.1.2000}
 
@@ -23,7 +22,7 @@
 \usepackage{longtable} % Tabellen können sich nicht über mehrere Seiten 
 \usepackage{graphicx} % kann LaTeX Grafiken einbinden
 
-\usepackage[ansinew]{inputenc} % Umlaute unter Mac werden automatisch gesetzt
+
 \usepackage[T1]{fontenc} % Zeichenencoding
 \usepackage{lmodern} % typographische Qualität 
 \frenchspacing % Schaltet den zusätzlichen Zwischenraum ab
@@ -32,9 +31,9 @@
 \usepackage{color}
 \usepackage{url}
 
-
 \usepackage[nottoc]{tocbibind}
-
+\usepackage[T1]{fontenc}
+\usepackage[utf8x]{inputenc}% Umlaute unter Mac werden automatisch gesetzt
 
 % für Listings
 \usepackage{listings}
@@ -70,9 +69,38 @@
 %----------------- VERZEICHNISSE -----------------%
 \tableofcontents % Inhaltverzeichnis
 
-
-
 \pagestyle{plain} % zurueck setzen von roemische seitenanzahl
+
+%----------------- EINLEITUNG -----------------%
+\chapter{Einleitung}
+längere Version des Abstracts 
+\chapter{Graphendatenbanken}
+\section{Graphen}
+kurze erklärung zu Graphen und deren Funktionsweise.
+\section{Funktionsweise Graphendatenbanken}
+einführung in das Konzept der Graphendatenbanken
+und abgrenzung zu anderen Datenbanken
+\section{Abfrage und Analyse von Daten}
+Wie werden Daten in Graphendatenbanken abgefragt und zur Wertgewinnung benutzt.
+Einfaches abfragen von Komplexen Informationen
+
+%----------------- INHALT -----------------%
+\chapter{Vergleich der Graphendatenbanken}
+Problem der nicht Standartisierung erläutern und die Methodik der Evaluierung und des praktischen tests veranschaulichen
+\section{Standart Lösungen für Querys}
+Die Vor und Nachteile von Standartlösungen bei Graphendatenbanken
+\section{Funktionen der Systeme}
+Wer kann was und nach welchen Kriterien wird bewertet 
+
+%----------------- ERGEBNISSE -----------------%
+\chapter{Ergebnisse}
+Darstellung der Ergebnisse zu den Systemen und einzelnen Themen
+
+\chapter{Related Work}
+\nocite{Robinson2015}
+\nocite{Angles2012}
+
+
 
 %\nocite{wiki:xxx}
 \nocite{Robinson2015}
