@@ -4,12 +4,12 @@
 \pdfinfo{    
      /Title (PDF-Titel) 
      /Subject   (PDF-Thema)    
-     /Author  (Jan Niklas Hollenbeck)    
-      /Keywords   (Graphen ,Datenbanken) 
+     /Author  (Vorname Nachname) 
+     /Keywords   (Stichwort1,Stichwort2)      
 } 
 
-\title{Graphendatenbanken}
-\author{Jan Niklas Hollenbeck}
+\title{MyTitle}
+\author{theAuthor}
 \date{1.1.2000}
 
 
@@ -23,9 +23,8 @@
 \usepackage{longtable} % Tabellen können sich nicht über mehrere Seiten 
 \usepackage{graphicx} % kann LaTeX Grafiken einbinden
 
-
+\usepackage[applemac]{inputenc} % Umlaute unter Mac werden automatisch gesetzt
 \usepackage[T1]{fontenc} % Zeichenencoding
-
 \usepackage{lmodern} % typographische Qualität 
 \frenchspacing % Schaltet den zusätzlichen Zwischenraum ab
 \usepackage{fix-cm}
@@ -33,8 +32,10 @@
 \usepackage{color}
 \usepackage{url}
 
+
 \usepackage[nottoc]{tocbibind}
-\usepackage[utf8]{inputenc}% Umlaute unter Mac werden automatisch gesetzt
+
+
 
 % für Listings
 \usepackage{listings}
@@ -79,25 +80,25 @@ längere Version des Abstracts
 
 \chapter{Graphendatenbanken}
 \section{Graphen}
-Kurze Erklärung zu Graphen und deren Funktionsweise.
+kurze erklärung zu Graphen und deren Funktionsweise.
 \section{Funktionsweise Graphendatenbanken}
 Einführung in das Konzept der Graphendatenbanken
-und Abgrenzung zu anderen Datenbanken
+und abgrenzung zu anderen Datenbanken
 \section{Modelle}
-Vorstellung der verschiedenen Graphenmodelle zur Strukturierung der Datenbank
+Vorstellung der Verschiedenen Graphen Modelle zur Strukturierung der Datenbank
 \section{Abfrage und Analyse von Daten}
 Wie werden Daten in Graphendatenbanken abgefragt und zur Wertgewinnung benutzt.
-Einfaches Abfragen von komplexen Informationen
-\subsection{Link Analysis}
-Nutzen von Graphendatenbanken zur Generierung von wertvollen Informationen
+Einfaches abfragen von Komplexen Informationen
+\subsubsection{Link Analysis}
+Nutzen von Graphendatenbanken zur generierung von wertvollen Infromationne
 \subsection{Traversierung}
-Suchen von Verbindungen ausgehend von Knoten erklären
+
 
 %----------------- INHALT -----------------%
 \chapter{Vergleich der Graphendatenbanken}
-Problem der Standardisierung erläutern und die Methodik der Evaluierung und des praktischen Tests veranschaulichen
-\section{Standardlösungen für Querys}
-Die Vor- und Nachteile von Standardlösungen bei Graphendatenbanken
+Problem der nicht Standartisierung erläutern und die Methodik der Evaluierung und des praktischen tests veranschaulichen
+\section{Standartlösungen für Querys}
+Die Vor und Nachteile von Standartlösungen bei Graphendatenbanken
 \section{Funktionen der Systeme}
 Wer kann was und nach welchen Kriterien wird bewertet 
 
@@ -110,15 +111,9 @@ Darstellung der Ergebnisse zu den Systemen und einzelnen Themen
 \cite{Robinson2015}
 \cite{Angles2012}
 \cite{Liu2009}
-
-\chapter{Zusammenfassung}
-Zusammenfassung der wichtigsten Punkte
-
-
 \bibliographystyle{amsalpha}
 \bibliography{literatur}
 \pagenumbering{Roman}	
 	
-
-	
 \end{document}
+	
